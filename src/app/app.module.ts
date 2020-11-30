@@ -1,54 +1,53 @@
 // Core
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 // Routing / Supplemental
-import { AppRoutingModule } from './app-routing.module';
-
-// Components
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/scaffold/header/header.component';
-import { ShoppingListComponent } from './components/shopping/shopping-list/shopping-list.component';
-import { ShoppingListEditComponent } from './components/shopping/shopping-list-edit/shopping-list-edit.component';
-import { IngredientComponent } from './components/shopping/ingredient/ingredient.component';
-import { RecipeBookComponent } from './components/recipe/recipe-book/recipe-book.component';
-import { RecipeListComponent } from './components/recipe/recipe-list/recipe-list.component';
-import { RecipeItemComponent } from './components/recipe/recipe-item/recipe-item.component';
-import { RecipeDetailComponent } from './components/recipe/recipe-detail/recipe-detail.component';
-import { RecipeComponent } from './components/recipe/recipe/recipe.component';
-import { FooterComponent } from './components/scaffold/footer/footer.component';
-import { RecipePageComponent } from './components/recipe/recipe.component'
-import { ShoppingPageComponent } from './components/shopping/shopping.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
 
 // Material UI
 import { MatTabsModule } from '@angular/material/tabs';
-import { NavbarComponent } from './components/scaffold/navbar/navbar.component';
+
+// Components
+import { HeaderComponent } from './scaffold/header/header.component';
+import { NavbarComponent } from './scaffold/navbar/navbar.component';
+import { FooterComponent } from './scaffold/footer/footer.component';
+
+import { RecipesPageComponent } from './pages/recipes-page/recipes-page.component';
+import { ShoppingPageComponent } from './pages/shopping-page/shopping-page.component';
+
+import { RecipeBookComponent } from './components/recipes/recipe-book/recipe-book.component';
+import { RecipeListComponent } from './components/recipes/recipe-list/recipe-list.component';
+import { RecipeItemComponent } from './components/recipes/recipe-item/recipe-item.component';
+import { RecipeDetailComponent } from './components/recipes/recipe-detail/recipe-detail.component';
+import { ShoppingListComponent } from './components/shopping/shopping-list/shopping-list.component';
+import { ShoppingListEditComponent } from './components/shopping/shopping-list-edit/shopping-list-edit.component';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    // Scaffold
     HeaderComponent,
+    NavbarComponent,
     FooterComponent,
-
-    RecipePageComponent,
+    // Pages
+    RecipesPageComponent,
     ShoppingPageComponent,
-
-    ShoppingListComponent,
-    ShoppingListEditComponent,
-    IngredientComponent,
-
+    // Components
     RecipeBookComponent,
     RecipeListComponent,
     RecipeItemComponent,
     RecipeDetailComponent,
-    RecipeComponent,
-    NavbarComponent
+    ShoppingListComponent,
+    ShoppingListEditComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
     MatTabsModule
   ],
   providers: [],
