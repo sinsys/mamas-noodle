@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-shopping-page',
-  templateUrl: './shopping.component.html',
-  styleUrls: ['./shopping.component.scss']
+  templateUrl: './shopping-page.component.html',
+  styleUrls: ['./shopping-page.component.scss']
 })
 export class ShoppingPageComponent implements OnInit {
 

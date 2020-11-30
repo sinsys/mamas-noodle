@@ -1,0 +1,31 @@
+@import 'src/styles/common';
+
+:host {
+  display: inline-block;
+  background: $darkTan;
+  padding: 2rem;
+  width: auto;
+  box-shadow: $shadow-standard;
+  opacity: 0.75;
+  cursor: pointer;
+  transition: 0.3s transform, 0.3s opacity;
+
+  &:hover {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+
+  h4 {
+    display: inline-block;
+    line-height: 2rem;
+    border-bottom: 1px solid $slateGray;
+  }
+
+  p {
+    padding: 1rem;
+  }
+
+  img {
+    max-width: 320px;
+  }
+}
