@@ -23,6 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Material UI
 import { MatTabsModule } from '@angular/material/tabs';
+import { NavbarComponent } from './components/scaffold/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     RecipeListComponent,
     RecipeItemComponent,
     RecipeDetailComponent,
-    RecipeComponent
+    RecipeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
