@@ -18,12 +18,20 @@
       width: 100%;
       flex-grow: 1;
       padding: 1rem;
+
+      background: #abbaab;
+      background: -webkit-linear-gradient(to bottom, $white, $gray);
+      background: linear-gradient(to bottom, $white, $gray);
     }
   }
 
   .page {
-    ::ng-deep p {
-      color: $darkGray;
+    ::ng-deep {
+      p {
+        color: $darkGray;
+      }
     }
   }
+
+
 }
