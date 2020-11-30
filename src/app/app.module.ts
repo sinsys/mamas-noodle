@@ -19,6 +19,10 @@ import { RecipeComponent } from './components/recipe/recipe/recipe.component';
 import { FooterComponent } from './components/scaffold/footer/footer.component';
 import { RecipePageComponent } from './components/recipe/recipe.component'
 import { ShoppingPageComponent } from './components/shopping/shopping.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// Material UI
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -41,7 +45,9 @@ import { ShoppingPageComponent } from './components/shopping/shopping.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,10 +10,17 @@
 
   h1 {
     color: $baseTan;
+    font-size: 2rem;
   }
 
   p {
     padding: 0.5rem;
     color: $baseTan;
+  }
+
+  @media screen and (min-width: 600px) {
+    h1 {
+      font-size: 3rem;
+    }
   }
 }

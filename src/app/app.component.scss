@@ -22,8 +22,12 @@
   }
 
   .page {
-    ::ng-deep p {
-      color: $darkGray;
+    ::ng-deep {
+      p {
+        color: $darkGray;
+      }
     }
   }
+
+
 }
